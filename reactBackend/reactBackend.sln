@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34525.116
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "reactBackend", "reactBackend\reactBackend.csproj", "{216E8AD4-1CA3-452B-9B84-76BF250402F9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "reactBackend", "reactBackend\reactBackend.csproj", "{216E8AD4-1CA3-452B-9B84-76BF250402F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Temporal", "Temporal\Temporal.csproj", "{D1931E5B-97D2-49AC-9268-BB6E8EB74F36}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{216E8AD4-1CA3-452B-9B84-76BF250402F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{216E8AD4-1CA3-452B-9B84-76BF250402F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{216E8AD4-1CA3-452B-9B84-76BF250402F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1931E5B-97D2-49AC-9268-BB6E8EB74F36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1931E5B-97D2-49AC-9268-BB6E8EB74F36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1931E5B-97D2-49AC-9268-BB6E8EB74F36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1931E5B-97D2-49AC-9268-BB6E8EB74F36}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
