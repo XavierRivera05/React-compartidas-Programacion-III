@@ -1,14 +1,16 @@
 ﻿using reactBackend;
 using reactBackend.Models;
 
-AlumnoDAO alumnoDao = new reactBackend.AlumnoDAO();
+AlumnoDAO alumnoDao = new AlumnoDAO();
 
-var alumno = alumnoDao.SelectAll();
 
-foreach (var item in alumno)
-{
-    Console.WriteLine(item.Nombre);
-}
+Console.WriteLine(" ");
+
+#region SelectByID
+var selectById = alumnoDao.GetbyId(1);
+Console.WriteLine(selectById?.Nombre);
+#endregion
+
 
 
 

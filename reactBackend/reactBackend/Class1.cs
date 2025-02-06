@@ -20,5 +20,14 @@ namespace reactBackend
             return alumno;
         }
         #endregion
+
+        #region Seleccionamos por ID
+
+        public Alumno? GetbyId(int id)
+        {
+            var alumno = contexto.Alumnos.Where(x => x.Id == id).FirstOrDefault();
+            return alumno == null ? null : alumno;
+        }
+        #endregion
     }
 }
