@@ -10,7 +10,7 @@ package database;
  */
 public class pruebaConexion {
      public static void main(String[] args) {
-        Conexion conexion = new Conexion();
+        Conexion conexion = Conexion.getInstance();
         conexion.desconnectar();
     }
 }

@@ -11,16 +11,17 @@ import java.sql.SQLException;
 
 public class Conexion 
 {
+    private static Conexion instancia; //en referencia al singleton
  private final String DB_DRIVER = "com.mysql.cj.jdbc.Driver";
     private final String URL="jdbc:mysql://localhost:3306/";  
     private final String DB = "puntoventa";
     private final String USER = "root";
     private final String PASSWORD = "1234"; 
     
-    public Connection connection;
+    private Connection connection;
     
     
-    public Conexion(){
+    private Conexion(){
      try {
             Class.forName(DB_DRIVER); // Cargar el driver
             connection = DriverManager.getConnection(URL, USER, PASSWORD);
@@ -33,7 +34,23 @@ public class Conexion
             e.printStackTrace();
         }
     }
+    
+    //singleton o singlenton?! XD
+    public static Conexion getInstance(){
+        if (instancia == null){
+            instancia = new Conexion();
+        }
+        return instancia;
+    }
+    
+    //obtener la connection bolitos mix
      
+    public Connection getConnection()
+    {
+        return connection;
+    }
+    
+    
     public void desconnectar() {
         try {
             if (connection != null) {
